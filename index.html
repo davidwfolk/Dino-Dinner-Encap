@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js'>
+
+    <title>Dino Bites</title>
+  </head>
+
+<body class="body-bg">
+  <section class='bg-header'>
+    <header class=''>
+      <h1 class='text-white text-center bg-header p-3'><strong>Dino Bites</strong></h1>
+    </header>
+  </section>
+
+  <main class=''>
+
+    <section class='section-1'>
+      <div class='container'>
+        <div class='row text-center m-auto'>
+          <div class= 'col-12 col-md-4 m-auto text-center'>
+            <div class="card text-center m-auto">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+          <div class='col-12 col-md-4 img-fluid'>
+            <img src="dino happy.gif" alt="" class="m-auto img-fluid" onclick="app.gameController.clickFood()"> 
+          </div>
+          <div class= 'col-12 col-md-4 m-auto text-center'>
+            <div class="card text-center m-auto">
+              <div class="card-body">
+                <h5 class="card-title">Food Eaten: <span id="food">0</span></h5>
+                <h6 class="card-subtitle mb-2 text-muted">leaf: <span id="leaf">0</span></h6>
+                <h6 class="card-subtitle mb-2 text-muted">tree: <span id="tree">0</span></h6>
+                <h6 class="card-subtitle mb-2 text-muted">human: <span id="human">0</span></h6>
+                <h6 class="card-subtitle mb-2 text-muted">herbivore: <span id="herbivore">0</span></h6>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class=''>
+      <div class='container m-5'>
+        <div class='row text-center'>
+          <div class="card text-center m-auto">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class=''>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'></script>
+    <script src='https://use.fontawesome.com/releases/v5.12.1/js/all.js' data-auto-replace-svg></script>
+   <script type="module" src='/app/main.js'></script>
+  </body>
+</html>
