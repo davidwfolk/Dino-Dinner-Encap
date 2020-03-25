@@ -1,9 +1,9 @@
 .body-bg {
   background-image: url(/283f4beb7390c9142e92849ec3d93c8c.png);
+  background-blend-mode: soft-light;
   background-repeat: no-repeat;
   background-size: 100vw;
   background-position: center;
-  
 }
 
 .bg-card {
