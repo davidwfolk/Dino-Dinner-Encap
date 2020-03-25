@@ -3,7 +3,7 @@
 
 
 export default class Dino {
-  constructor(data) {
+  constructor() {
     this.foodCount = 0
     this.foodPerSecond = 0
     this.foodPerClick = 0

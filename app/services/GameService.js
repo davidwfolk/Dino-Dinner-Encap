@@ -1,10 +1,7 @@
 import Dino from "../models/Game.js"
 import Upgrade from "../models/Upgrades.js"
-import GameController from "../controllers/GameController.js"
 
 let _foodCounts = new Dino () 
-
-let _dinoFood = 0
 
 let _leafConfigObj = {
     name: "leaf",
@@ -91,6 +88,51 @@ export default class GameService {
   get DinoFeed() {
   return _foodCounts.foodCount.toString()
   }
+
+  get FoodPerClick() {
+    return _foodCounts.foodPerClick.toString()
+  }
+
+  get FoodPerSecond() {
+    return _foodCounts.foodPerSecond.toString()
+  }
+
+  get LeafLevel() {
+    return _leaf.level.toString()
+  }
+
+  get LeafPrice() {
+    return _leaf.price.toString()
+  }
+
+  get TreeLevel() {
+    return _tree.level.toString()
+  }
+
+  get TreePrice() {
+    return _tree.price.toString()
+  }
+
+  get CavemanLevel() {
+    return _caveman.level.toString()
+  }
+
+  get CavemanPrice() {
+    return _caveman.price.toString()
+  }
+
+  get HerbivoreLevel() {
+    return _herbivore.level.toString()
+  }
+
+  get HerbivorePrice() {
+    return _herbivore.price.toString()
+  }
+
+  get MessageCenter() {
+    return _foodCounts.message
+  }
+
   constructor() {
     console.log("hello from gameService")
   }

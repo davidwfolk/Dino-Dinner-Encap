@@ -1,4 +1,3 @@
-import gameController from "./controllers/GameController.js"
 import GameController from "./controllers/GameController.js"
 
 
