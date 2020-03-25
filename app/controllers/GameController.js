@@ -3,7 +3,7 @@ import GameService from "../services/GameService.js"
 let _gameService = new GameService
 
 function _draw(){
-  document.getElementById("food").innerText = _gameService.DinoFeed
+  document.getElementById("food").innerText = _gameService.FoodCount
   document.getElementById("food-per-click").innerText = _gameService.FoodPerClick
   document.getElementById("food-per-second").innerText = _gameService.FoodPerSecond
   document.getElementById("leaf-level").innerText = _gameService.LeafLevel
@@ -14,20 +14,20 @@ function _draw(){
   document.getElementById("caveman-price").innerText = _gameService.CavemanPrice
   document.getElementById("herbivore-level").innerText = _gameService.HerbivoreLevel
   document.getElementById("herbivore-price").innerText = _gameService.HerbivorePrice
-  document.getElementById("message-center").innerText = _gameService.MessageCenter
+  // document.getElementById("message-center").innerText = _gameService.MessageCenter
 }
 
 
 
 export default class GameController {
   constructor() {
-    // console.log("hello from gameController")
+    console.log("hello from gameController")
     _draw()
   }
 
   feedMe() {
     _gameService.feedMe()
-    // console.log("works?");
+    console.log("works?");
     _draw()
     
   }

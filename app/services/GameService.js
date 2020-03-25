@@ -7,28 +7,28 @@ let _leafConfigObj = {
     name: "leaf",
      price: 1,
      level: 0,
-     multiplier: 1,
+     modifier: 1,
 }
 
 let _treeConfigObj = {
      name: "tree",
      price: 2,
      level: 0,
-     multiplier: 2
+     modifier: 2
   }
 
 let _cavemanConfigObj = {
      name: "human",
      price: 250,
      level: 0,
-     multiplier: 20,
+     modifier: 20,
     }
 
 let _herbivoreConfigObj = {
       name: "herbivore",
       price: 500,
       level: 0,
-      multiplier: 20,
+      modifier: 20,
     }
 
 let _leaf = new Upgrade (_leafConfigObj)
@@ -47,6 +47,8 @@ export default class GameService {
    
   feedMe() {
     _foodCounts.foodCount++
+
+    this.calcSingUpgrade()
     }
   
   purchaseLeaf(){
@@ -55,12 +57,13 @@ export default class GameService {
       _foodCounts.foodCount -= _leaf.price
       _leaf.price += 50
       console.log(_leaf.level);
+
     }
   }
 
   purchaseTree(){
     if (_foodCounts.foodCount >= _tree.price) {
-      _caveman.level ++
+      _tree.level ++
       _foodCounts.foodCount -= _tree.price
       _tree.price += 70
       console.log(_tree.level);
@@ -85,7 +88,14 @@ export default class GameService {
     }
   }
 
-  get DinoFeed() {
+  calcSingUpgrade() {
+    _foodCounts.foodPerClick = (_leaf.level * _leaf.modifier) + (_tree.level * _tree.modifier)
+    _foodCounts.foodCount += (_leaf.level * _leaf.modifier) + (_tree.level * _tree.modifier)
+  }
+
+
+
+  get FoodCount() {
   return _foodCounts.foodCount.toString()
   }
 
